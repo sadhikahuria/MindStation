@@ -13,3 +13,6 @@ app.listen(port, () => {
 
 const uploadRouter = require('./routes/upload');
 app.use('/api', uploadRouter);
+
+const summarizeRouter = require('./routes/summarize');
+app.use('/api', summarizeRouter);
